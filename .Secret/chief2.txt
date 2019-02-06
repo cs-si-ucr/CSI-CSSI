@@ -1,0 +1,12 @@
+
+Assignment
+------------------------
+Chief: Now that you've taken a look at the documents (or not), let's get down to the real details of the case. We're thinking that Mr. Pereza's murder was
+a random pokestop thugging gone wrong when he was off trying to catch a shiny Mewtwo on Pokemon Go at the park. The problem is we don't have a suspect or any
+leads. The only thing we collected at the crime scene is his phone, which holds the last voice data message a few minutes before his death. An intern 
+named Will who worked here before created a machine learning algorithm to match up any speech patterns to the voice database. However, he left before the 
+project finished completion. Could you finish the project off? I've added the source code to Your_PC under Code, and also added Omar's phone to your Notes.
+
+I have also provided you with the data on the location of each citizen in the city. Once you've fixed up the project, run the code to find a name. 
+Find out where this person lives and investigate their address by heading to the Street. If you're stuck, use 'investigate --help' for guidance.
+Rest assured, I'll be tagging along with you when you go investigate the house.

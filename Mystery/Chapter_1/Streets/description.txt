@@ -1,0 +1,1 @@
+These are the public streets. To go to a house, you must use the 'investigate' command.

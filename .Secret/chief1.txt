@@ -1,0 +1,19 @@
+88*************************88
+---   C H A P T E R   1   ---
+88*************************88
+
+Welcome to the SIPD
+------------------------
+Chief: Hi detective, welcome to the SIPD (Supplemental Instruction Police Department). We hired you here to investigate a recent murder that has
+taken place at the ARC here at UCR. A SI Leader, Omar Pereza, was murdered in the SI workroom @ 19:30 on February 4th of 2019. We've collected alibis
+from each of the witnesses as well as the rest of the CS SI leaders. I know you're new to this town, so here's some basic commands to get you started:
+
+ls | where you are
+ls -a | searches a scene for any hidden clues
+cd <dir> | go to that location
+vim <file> | opens up a file
+chmod +r <file> | adds read permissions to a file, you can use this to view confidential info
+g++ <srcFile> -o <outputFile> | you should know what this does
+
+You also have 'commands' that you alone can perform. To see your commands, type in 'commands'. The alibis and police report are
+at the computer, so be sure to take a look.

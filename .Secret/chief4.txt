@@ -1,0 +1,21 @@
+
+Epiphany
+------------------------
+Chief: WAIT!! I'VE SEEN THIS ENCODING BEFORE!!...When I used to work as a nuclear physicist for Amazon,
+Jeff Bezos himself used to tout this encoding propaganda. If you take 'AWS', copy-paste it 26 times,
+one for each letter of the alphabet, A-Z, and put that through a base-64 encoding - then, take that
+encoding, copy-paste that 26 MORE times and put that through another base-64 encoding, you end up with
+that message. After carefully adding a newline character every 67 characters exactly, you wind up with
+exactly 10 characters before the next line break. Back in the 2000s, Bezos realized how incredible
+this was as these 10 blank characters could be substituted for 'MONEYMONEY', creating a perfect symbolic
+center piece of what Amazon is focused on - $ and AWS, while simultaneously representing that Amazon
+represents everything from A-Z not just once, but twice. This isn't just some simple Amazon fanboy at work here.
+This must be the work of the Cult.
+
+You: The Cult? Like Satanist cults?
+
+Chief: Worse, the Cult of Bezos.
+
+You: And why does Amazon need nuclear physicist?
+
+Chief: I've said too much. Anyway, we need to make a trip to the biggest startup dream killer in existence - Silicon Valley
