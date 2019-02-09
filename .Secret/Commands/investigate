@@ -26,7 +26,7 @@ def invest_location(game_state, loc):
         print('You can\'t even go to this location! Go to the Streets first!')
         return
 
-    if game_state == game.GameState.INIT or game_state == game.GameState.INTRO:
+    if game_state == game.GameState.INTRO:
         print('Why are you even trying to visit houses?')
         return
 
