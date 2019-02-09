@@ -4,12 +4,11 @@ import os
 from definitions import ROOT_DIR
 
 class GameState(Enum):
-    INIT = 0
-    INTRO = 1
-    ASSIGNMENT = 2
-    HOUSE = 3
-    AMAZON = 4
-    CULT = 5
+    INTRO = 0
+    ASSIGNMENT = 1
+    HOUSE = 2
+    AMAZON = 3
+    CULT = 4
 
 
 class Action(Enum):
@@ -61,11 +60,7 @@ def _check_password():
 def progress(action, target):
 
     # state machine
-    if game_state == GameState.INIT:
-        if action == Action.TALK and target == 'Chief.person':
-            _set_state(GameState.INTRO)
-
-    elif game_state == GameState.INTRO:
+    if game_state == GameState.INTRO:
         if action == Action.TALK and target == 'Chief.person':
             _set_state(GameState.ASSIGNMENT)
 
