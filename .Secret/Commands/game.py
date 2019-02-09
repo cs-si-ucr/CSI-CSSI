@@ -53,8 +53,11 @@ def _set_state(g_state):
 
 
 def _check_password():
-    with open(str(Path(ROOT_DIR) / 'Mystery' / 'Chapter_1' / 'SF' / 'AWS_Alley' / 'Computer' / 'password.txt'), 'r') as fin:
-        return fin.read() == 'money'
+    try:
+        with open(str(Path(ROOT_DIR) / 'Mystery' / 'Chapter_1' / 'SF' / 'AWS_Alley' / 'Computer' / 'password.txt'), 'r') as fin:
+            return fin.read() == 'money'
+    except Exception:
+        pass
 
 
 def progress(action, target):

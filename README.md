@@ -31,15 +31,15 @@ To figure out whodunit, you need access to a command line.
 
 Be sure to run `source ./start.sh` to configure everything correctly.
 
-Open a Terminal, go to the location of the files, and start by going to SIPD and talking to the Chief via `talk -p Chief.person`
+Open a Terminal, go to `Mystery`->`Chapter_1`, and start by going to SIPD and talking to the Chief via `talk_to -p Chief.person`
 
-One way you can do this is with the command:
+You have a wide variety of commands available to you. Try to find what they are and how to use them by typing `commands` in terminal after you've run `source ./start.sh`
+
+To view files, use the `cat` command.
 
 	cat <file>
 
 (`cat` is a command that will print the contents of the file for you to read.)
-
-To get started on how to use the command line, open cheatsheet.md or cheatsheet.pdf (from the command line, you can type 'vim cheatsheet.md').
 
 Don't use a text editor to view any files except these instructions. You
 may NOT touch the .Secret folder at all.
