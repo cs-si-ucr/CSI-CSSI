@@ -1,0 +1,42 @@
+#!/usr/bin/env python3
+
+import argparse
+import game
+from pathlib import Path
+from definitions import ROOT_DIR
+
+def print_convo(game_state, person):
+    if person == 'Guard.person':
+        print("There's really nothing here to do...")
+    elif person == 'Kennen.person':
+        if game_state == game.GameState.AMAZON:
+            print("Put the password in a \'password.txt\' file in the Computer, then we\'ll talk.")
+        else:
+            print("Welcome to the Cult")
+    elif person == 'Chief.person':
+        if (game_state == game.GameState.INTRO):
+            with open(str(Path(ROOT_DIR) / 'Dialogue' / 'Chief' / 'chief1.txt'), 'r') as fin:
+                print(fin.read())
+        elif (game_state == game.GameState.ASSIGNMENT):
+            with open(str(Path(ROOT_DIR) / 'Dialogue' / 'Chief' / 'chief2.txt'), 'r') as fin:
+                print(fin.read())
+        elif (game_state == game.GameState.HOUSE):
+            with open(str(Path(ROOT_DIR) / 'Dialogue' / 'Chief' / 'chief3.txt'), 'r') as fin:
+                print(fin.read())
+        elif (game_state == game.GameState.AMAZON):
+            with open(str(Path(ROOT_DIR) / 'Dialogue' / 'Chief' / 'chief4.txt'), 'r') as fin:
+                print(fin.read())
+        elif (game_state == game.GameState.AMAZON):
+            print('Good work infiltrating the cult.')
+
+parser = argparse.ArgumentParser(description='Talk to a person')
+parser.add_argument('-u', '--yourself', action='store_true', help='You don\'t need any help with this.')
+parser.add_argument('-p', '--person', help='Usage: talk_to -p Chief.person')
+args = parser.parse_args()
+
+if (args.yourself):
+    print('You talked to yourself. Nothing new to report.')
+
+if (args.person):
+    game.progress(game.Action.TALK, args.person)
+    print_convo(game.game_state, args.person)

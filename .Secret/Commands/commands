@@ -1,0 +1,7 @@
+#!/usr/bin/env python3
+
+print('Commands:\n')
+print('investigate --help')
+print('notes --help')
+print('talk_to --help')
+print('arrest --help')

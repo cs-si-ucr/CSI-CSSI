@@ -29,17 +29,17 @@ There's been a murder in Terminal City, and SIPD needs your help.
 
 To figure out whodunit, you need access to a command line.
 
-Be sure to run `./start.sh` to configure everything correctly.
+Be sure to run `source ./start.sh` to configure everything correctly.
 
 Open a Terminal, go to the location of the files, and start by going to SIPD and talking to the Chief via `talk -p Chief.person`
 
 One way you can do this is with the command:
 
-	cat instructions
+	cat <file>
 
-(`cat` is a command that will print the contents of the file called `instructions` for you to read.)
+(`cat` is a command that will print the contents of the file for you to read.)
 
 To get started on how to use the command line, open cheatsheet.md or cheatsheet.pdf (from the command line, you can type 'vim cheatsheet.md').
 
-Don't use a text editor to view any files except these instructions, the cheatsheet, and hints. You
-may NOT touch the .Secret and Commands folder at all.
+Don't use a text editor to view any files except these instructions. You
+may NOT touch the .Secret folder at all.

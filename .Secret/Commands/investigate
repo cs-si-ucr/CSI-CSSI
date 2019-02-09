@@ -1,0 +1,50 @@
+#!/usr/bin/env python3
+
+import argparse
+import game
+from pathlib import Path
+
+
+parser = argparse.ArgumentParser(description='Investigate any clues or locations. Clues are hidden files that start with \'.\'')
+parser.add_argument('-l', '--location', help='Investigate a location i.e. investigate -l \"Madeup Avenue 10\"')
+parser.add_argument('-c', '--clue', help='Investigate a file that starts with \'.\'')
+parser.add_argument('-p', '--person', help='Investigate a person\'s background')
+args = parser.parse_args()
+
+def invest_evidence(game_state, clue):
+    if clue == '.wallpaper':
+        with open(str(Path('Dialogue') / 'Chief' / 'chief2.txt'), 'r') as fin:
+            print(fin.read())
+    if clue == '.phone':
+        print('(A lot of shinies on that Pokemon Go account...)')
+    else:
+        print('You can\'t perform this action!')
+
+def invest_location(game_state, loc):  
+    if Path().absolute().name != 'Streets': 
+        print('You can\'t even go to this location! Go to the Streets first!')
+        return
+
+    if game_state == game.GameState.INIT or game_state == game.GameState.INTRO:
+        print('Why are you even trying to visit houses?')
+        return
+
+    if clue == 'College Avenue 34':
+        if game_state == game.GameState.ASSIGNMENT:
+            print('Click.')
+            print('You have now unlocked Andre_House')
+        else:
+            print('You\'ve already investigated this house')
+    else:
+        print('Woah...did not mean to see THAT') 
+
+if (args.house):
+    game.progress(game.Action.INVESTIGATE, args.house)
+    invest_location(game.game_state, args.house)
+    
+if (args.clue):
+    game.progress(game.Action.INVESTIGATE, args.clue)
+    invest_evidence(game.game_state, args.house)
+    
+if (args.person):
+    print('Like we have the budget to perform a background check...')

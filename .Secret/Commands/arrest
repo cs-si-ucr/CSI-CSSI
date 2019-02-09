@@ -1,0 +1,10 @@
+#!/usr/bin/env python3
+
+import argparse
+
+parser = argparse.ArgumentParser(description='You arrest someone, duh')
+parser.add_argument('-p', '--person', help='Arrest a suspect, must have arrest_warrant with that person\'s name')
+args = parser.parse_args()
+
+if (args.person):
+    print("You can't arrest \'{}\'! You don't have a warrant!".format(args.person))

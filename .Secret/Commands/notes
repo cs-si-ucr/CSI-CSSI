@@ -1,0 +1,27 @@
+#!/usr/bin/env python3
+
+import argparse
+import os
+from pathlib import Path
+from definitions import ROOT_DIR
+
+parser = argparse.ArgumentParser(description='View your notes and documents')
+parser.add_argument('-l', '--list', action='store_true', help='List out all your notes / documents')
+parser.add_argument('-v', '--view', help='View the contents of the file')
+args = parser.parse_args()
+
+_NOTES_DIR = str(Path(ROOT_DIR) / 'Notes')
+
+def list_notes():
+    for f in os.listdir(_NOTES_DIR):
+        print(f)
+     
+def view_note(file_name): 
+    with open(str(Path(_NOTES_DIR) / file_name), 'r') as fin:
+        print(fin.read())
+
+if (args.list):
+    list_notes()
+    
+if (args.view):
+    view_note(args.view)
