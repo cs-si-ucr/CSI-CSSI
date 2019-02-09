@@ -16,7 +16,7 @@ def invest_evidence(game_state, clue):
     if clue == '.wallpaper':
         with open(str(Path(ROOT_DIR) / '.Secret' / 'Dialogue' / 'wallpaper.txt'), 'r') as fin:
             print(fin.read())
-    if clue == '.phone':
+    elif clue == '.phone':
         print('(A lot of shinies on that Pokemon Go account...)')
     else:
         print('You can\'t perform this action!')

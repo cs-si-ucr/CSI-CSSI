@@ -57,7 +57,7 @@ def _check_password():
         with open(str(Path(ROOT_DIR) / 'Mystery' / 'Chapter_1' / 'SF' / 'AWS_Alley' / 'Computer' / 'password.txt'), 'r') as fin:
             return fin.read() == 'money'
     except Exception:
-        pass
+        return False
 
 
 def progress(action, target):
