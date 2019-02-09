@@ -30,7 +30,7 @@ def invest_location(game_state, loc):
         print('Why are you even trying to visit houses?')
         return
 
-    if clue == 'College Avenue 34':
+    if loc == 'College Avenue 34':
         if game_state == game.GameState.ASSIGNMENT:
             print('Click.')
             print('You have now unlocked Andre_House')
