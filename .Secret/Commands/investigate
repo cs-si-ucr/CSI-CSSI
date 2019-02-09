@@ -3,6 +3,7 @@
 import argparse
 import game
 from pathlib import Path
+import definitions
 
 
 parser = argparse.ArgumentParser(description='Investigate any clues or locations. Clues are hidden files that start with \'.\'')
@@ -13,7 +14,7 @@ args = parser.parse_args()
 
 def invest_evidence(game_state, clue):
     if clue == '.wallpaper':
-        with open(str(Path('Dialogue') / 'Chief' / 'chief2.txt'), 'r') as fin:
+        with open(str(Path(ROOT_DIR) / '.Secret' / 'Dialogue') / 'wallpaper.txt'), 'r') as fin:
             print(fin.read())
     if clue == '.phone':
         print('(A lot of shinies on that Pokemon Go account...)')

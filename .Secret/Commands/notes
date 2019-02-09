@@ -10,7 +10,7 @@ parser.add_argument('-l', '--list', action='store_true', help='List out all your
 parser.add_argument('-v', '--view', help='View the contents of the file')
 args = parser.parse_args()
 
-_NOTES_DIR = str(Path(ROOT_DIR) / 'Notes')
+_NOTES_DIR = str(Path(ROOT_DIR) / '.Secret' / 'Notes')
 
 def list_notes():
     for f in os.listdir(_NOTES_DIR):

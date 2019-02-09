@@ -15,16 +15,16 @@ def print_convo(game_state, person):
             print("Welcome to the Cult")
     elif person == 'Chief.person':
         if (game_state == game.GameState.INTRO):
-            with open(str(Path(ROOT_DIR) / 'Dialogue' / 'Chief' / 'chief1.txt'), 'r') as fin:
+            with open(str(Path(ROOT_DIR) / '.Secret' / 'Dialogue' / 'Chief' / 'chief1.txt'), 'r') as fin:
                 print(fin.read())
         elif (game_state == game.GameState.ASSIGNMENT):
-            with open(str(Path(ROOT_DIR) / 'Dialogue' / 'Chief' / 'chief2.txt'), 'r') as fin:
+            with open(str(Path(ROOT_DIR)  / '.Secret'/ 'Dialogue' / 'Chief' / 'chief2.txt'), 'r') as fin:
                 print(fin.read())
         elif (game_state == game.GameState.HOUSE):
-            with open(str(Path(ROOT_DIR) / 'Dialogue' / 'Chief' / 'chief3.txt'), 'r') as fin:
+            with open(str(Path(ROOT_DIR)  / '.Secret'/ 'Dialogue' / 'Chief' / 'chief3.txt'), 'r') as fin:
                 print(fin.read())
         elif (game_state == game.GameState.AMAZON):
-            with open(str(Path(ROOT_DIR) / 'Dialogue' / 'Chief' / 'chief4.txt'), 'r') as fin:
+            with open(str(Path(ROOT_DIR)  / '.Secret'/ 'Dialogue' / 'Chief' / 'chief4.txt'), 'r') as fin:
                 print(fin.read())
         elif (game_state == game.GameState.AMAZON):
             print('Good work infiltrating the cult.')
