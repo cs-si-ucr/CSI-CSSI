@@ -14,7 +14,7 @@ args = parser.parse_args()
 
 def invest_evidence(game_state, clue):
     if clue == '.wallpaper':
-        with open(str(Path(ROOT_DIR) / '.Secret' / 'Dialogue') / 'wallpaper.txt'), 'r') as fin:
+        with open(str(Path(ROOT_DIR) / '.Secret' / 'Dialogue' / 'wallpaper.txt'), 'r') as fin:
             print(fin.read())
     if clue == '.phone':
         print('(A lot of shinies on that Pokemon Go account...)')
@@ -39,13 +39,13 @@ def invest_location(game_state, loc):
     else:
         print('Woah...did not mean to see THAT') 
 
-if (args.house):
-    game.progress(game.Action.INVESTIGATE, args.house)
-    invest_location(game.game_state, args.house)
+if (args.location):
+    game.progress(game.Action.INVESTIGATE, args.location)
+    invest_location(game.game_state, args.location)
     
 if (args.clue):
     game.progress(game.Action.INVESTIGATE, args.clue)
-    invest_evidence(game.game_state, args.house)
+    invest_evidence(game.game_state, args.clue)
     
 if (args.person):
     print('Like we have the budget to perform a background check...')
