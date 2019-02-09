@@ -3,7 +3,7 @@
 import argparse
 import game
 from pathlib import Path
-import definitions
+from definitions import ROOT_DIR
 
 
 parser = argparse.ArgumentParser(description='Investigate any clues or locations. Clues are hidden files that start with \'.\'')
