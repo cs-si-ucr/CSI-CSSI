@@ -63,7 +63,7 @@ def progress(action, target):
     # state machine
     if game_state == GameState.INIT:
         if action == Action.TALK and target == 'Chief.person':
-            _set_state(GameState.ASSIGNMENT)
+            _set_state(GameState.INTRO)
 
     elif game_state == GameState.INTRO:
         if action == Action.TALK and target == 'Chief.person':
