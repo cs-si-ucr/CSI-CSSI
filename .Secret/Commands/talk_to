@@ -12,7 +12,8 @@ def print_convo(game_state, person):
         if game_state == game.GameState.AMAZON:
             print("Put the password in a \'password.txt\' file in the Computer, then we\'ll talk.")
         else:
-            print("Welcome to the Cult")
+            print("Welcome to the Cult\n")
+            print("End of Chapter 1")
     elif person == 'Chief.person':
         if (game_state == game.GameState.INTRO):
             with open(str(Path(ROOT_DIR) / '.Secret' / 'Dialogue' / 'Chief' / 'chief1.txt'), 'r') as fin:

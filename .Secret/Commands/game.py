@@ -55,7 +55,7 @@ def _set_state(g_state):
 def _check_password():
     try:
         with open(str(Path(ROOT_DIR) / 'Mystery' / 'Chapter_1' / 'SF' / 'AWS_Alley' / 'Computer' / 'password.txt'), 'r') as fin:
-            return fin.read() == 'money'
+            return fin.read().strip() == 'money'
     except Exception:
         return False
 
@@ -77,7 +77,7 @@ def progress(action, target):
 
     elif game_state == GameState.AMAZON:
         if action == Action.TALK and target == 'Kennen.person' and _check_password():
-            _game_state = GameState.CULT
+            _set_state(GameState.CULT)
 
     elif game_state == GameState.CULT:
         pass
