@@ -7,4 +7,4 @@ PATH=$PATH:$(pwd)/.Secret/Commands
 chmod -r Mystery/Chapter_1/SIPD/Computer/police_report.txt
 
 # Compile to here
-g++ login.cpp -o .Secret/Temp/Andre_House/Laptop/login
+g++ .Secret/login.cpp -o .Secret/Temp/Andre_House/Laptop/login
