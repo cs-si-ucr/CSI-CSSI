@@ -1,3 +1,5 @@
+Credit to: https://github.com/veltman/clmystery for the ascii art and people.txt file
+
 The Command Line Murders
 ========================
 
